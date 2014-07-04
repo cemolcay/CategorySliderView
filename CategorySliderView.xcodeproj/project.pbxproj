@@ -22,6 +22,9 @@
 		B2BF887F1966B87000A78FD2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF88631966B87000A78FD2 /* CoreData.framework */; };
 		B2BF88871966B87000A78FD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2BF88851966B87000A78FD2 /* InfoPlist.strings */; };
 		B2BF88891966B87000A78FD2 /* CategorySliderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF88881966B87000A78FD2 /* CategorySliderViewTests.m */; };
+		B2BF88941966B88A00A78FD2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF88931966B88A00A78FD2 /* TestViewController.m */; };
+		B2BF88971966B89B00A78FD2 /* CategorySliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF88961966B89B00A78FD2 /* CategorySliderView.m */; };
+		B2BF889A1966C9C800A78FD2 /* catBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BF88991966C9C800A78FD2 /* catBar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		B2BF88841966B87000A78FD2 /* CategorySliderViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CategorySliderViewTests-Info.plist"; sourceTree = "<group>"; };
 		B2BF88861966B87000A78FD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B2BF88881966B87000A78FD2 /* CategorySliderViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategorySliderViewTests.m; sourceTree = "<group>"; };
+		B2BF88921966B88A00A78FD2 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		B2BF88931966B88A00A78FD2 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		B2BF88951966B89B00A78FD2 /* CategorySliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategorySliderView.h; sourceTree = "<group>"; };
+		B2BF88961966B89B00A78FD2 /* CategorySliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategorySliderView.m; sourceTree = "<group>"; };
+		B2BF88991966C9C800A78FD2 /* catBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "catBar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +123,11 @@
 		B2BF88651966B87000A78FD2 /* CategorySliderView */ = {
 			isa = PBXGroup;
 			children = (
+				B2BF88981966B8FA00A78FD2 /* CategorySliderView */,
 				B2BF886E1966B87000A78FD2 /* AppDelegate.h */,
 				B2BF886F1966B87000A78FD2 /* AppDelegate.m */,
-				B2BF88741966B87000A78FD2 /* Images.xcassets */,
-				B2BF88711966B87000A78FD2 /* CategorySliderView.xcdatamodeld */,
+				B2BF88921966B88A00A78FD2 /* TestViewController.h */,
+				B2BF88931966B88A00A78FD2 /* TestViewController.m */,
 				B2BF88661966B87000A78FD2 /* Supporting Files */,
 			);
 			path = CategorySliderView;
@@ -127,6 +136,8 @@
 		B2BF88661966B87000A78FD2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2BF88741966B87000A78FD2 /* Images.xcassets */,
+				B2BF88711966B87000A78FD2 /* CategorySliderView.xcdatamodeld */,
 				B2BF88671966B87000A78FD2 /* CategorySliderView-Info.plist */,
 				B2BF88681966B87000A78FD2 /* InfoPlist.strings */,
 				B2BF886B1966B87000A78FD2 /* main.m */,
@@ -151,6 +162,16 @@
 				B2BF88851966B87000A78FD2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2BF88981966B8FA00A78FD2 /* CategorySliderView */ = {
+			isa = PBXGroup;
+			children = (
+				B2BF88991966C9C800A78FD2 /* catBar@2x.png */,
+				B2BF88951966B89B00A78FD2 /* CategorySliderView.h */,
+				B2BF88961966B89B00A78FD2 /* CategorySliderView.m */,
+			);
+			name = CategorySliderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BF889A1966C9C800A78FD2 /* catBar@2x.png in Resources */,
 				B2BF886A1966B87000A78FD2 /* InfoPlist.strings in Resources */,
 				B2BF88751966B87000A78FD2 /* Images.xcassets in Resources */,
 			);
@@ -249,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BF88701966B87000A78FD2 /* AppDelegate.m in Sources */,
+				B2BF88971966B89B00A78FD2 /* CategorySliderView.m in Sources */,
 				B2BF88731966B87000A78FD2 /* CategorySliderView.xcdatamodeld in Sources */,
+				B2BF88941966B88A00A78FD2 /* TestViewController.m in Sources */,
 				B2BF886C1966B87000A78FD2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
