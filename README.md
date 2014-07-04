@@ -23,10 +23,18 @@ Copy CategorySliderView.h/m files into your project.
     [self.view addSubview:sliderView];
 
 
+you can add as many items as you want
+
+    UIView *newCategoryView = .....
+    [sliderView addCategotyView:newCategoryView];
+    
+
+
 Optional Properties
 -------------------
 
-shouldAutoScrollSlider: scrolls to closest category item after dragging ends
-shouldAutoSelectScrolledCategory: selects the closest category item after dragging ends
-categoryViewPadding: padding between category item views
-backgroundImage: background image for slider
+    shouldAutoScrollSlider: scrolls to closest category item after dragging ends
+    shouldAutoSelectScrolledCategory: selects the closest category item after dragging ends
+    categoryViewPadding: padding between category item views
+    backgroundImage: background image for slider
+    
