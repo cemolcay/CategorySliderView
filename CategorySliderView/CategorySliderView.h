@@ -13,6 +13,8 @@ typedef void(^categorySelected)(UIView *categoryView, NSInteger categoryIndex);
 @interface CategorySliderView : UIView <UIScrollViewDelegate>
 
 @property (copy) categorySelected categorySelectedBlock;
+
+@property (nonatomic, strong) UIImage *backgroundImage;
 @property (assign) NSInteger categoryViewPadding; //default 20
 @property (assign) BOOL shouldAutoScrollSlider; // default YES auto scrolls closest category after scroll drag ends
 @property (assign) BOOL shouldAutoSelectScrolledCategory; // default YES auto selects the slided category
@@ -22,7 +24,6 @@ typedef void(^categorySelected)(UIView *categoryView, NSInteger categoryIndex);
 - (instancetype)initWithSliderHeight:(CGFloat)height andCategoryViews:(NSArray *)categoryViews categorySelectionBlock:(categorySelected)block;
 
 - (void)addCategotyView:(UIView *)view;
-- (void)setBackgroundImage:(UIImage *)image;
 
 - (void)setY:(CGFloat)y;
 - (void)moveY:(CGFloat)y duration:(NSTimeInterval)duration complation:(void(^)(void))complation;

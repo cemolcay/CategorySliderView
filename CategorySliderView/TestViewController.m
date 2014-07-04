@@ -37,7 +37,6 @@
     
     [self.sliderView setY:-CategorySliderHeight];
     [self.sliderView moveY:20 duration:0.5 complation:nil];
-    [self.sliderView setBackgroundImage:[UIImage imageNamed:@"catBar.png"]];
     [self.view addSubview:self.sliderView];
     
     UIButton *addNewCat = [UIButton buttonWithType:UIButtonTypeCustom];

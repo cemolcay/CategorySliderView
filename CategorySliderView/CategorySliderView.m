@@ -82,10 +82,20 @@
 }
 
 - (void)setBackgroundImage:(UIImage *)image {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.frame];
-    [imageView setImage:image];
-    [self addSubview:imageView];
-    [self bringSubviewToFront:self.scrollView];
+    _backgroundImage = image;
+    
+    UIImageView *imageView = (UIImageView *)[self viewWithTag:100];
+    if (imageView) {
+        [imageView setImage:image];
+    }
+    else {
+        imageView = [[UIImageView alloc] initWithFrame:self.frame];
+        [imageView setImage:image];
+        [imageView setTag:100];
+        [self addSubview:imageView];
+        
+        [self bringSubviewToFront:self.scrollView];
+    }
 }
 
 - (void)categoryViewTapped:(UITapGestureRecognizer *)tap {
