@@ -12,13 +12,13 @@
 #define CategorySliderHeight 60
 
 @interface TestViewController ()
-@property CategorySliderView *sliderView;
+@property (nonatomic, strong) CategorySliderView *sliderView;
+@property (nonatomic, strong) CategorySliderView *verticalSlider;
 @end
 
 @implementation TestViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -26,8 +26,7 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.sliderView = [[CategorySliderView alloc] initWithSliderHeight:CategorySliderHeight andCategoryViews:@[[self labelWithText:@"First Category"], [self labelWithText:@"Second Category"], [self labelWithText:@"Yet another category"], [self labelWithText:@"and antoher category"]] categorySelectionBlock:^(UIView *categoryView, NSInteger categoryIndex) {
@@ -45,10 +44,21 @@
     [addNewCat setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [addNewCat addTarget:self action:@selector(addNewCategory:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:addNewCat];
+    
+    
+    self.verticalSlider = [[CategorySliderView alloc] initWithFrame:CGRectMake(0, 130, 50, 300) andCategoryViews:@[[self labelWithText:@"cat1"], [self labelWithText:@"cat2"], [self labelWithText:@"cat3"], [self labelWithText:@"cat4"]] sliderDirection:SliderDirectionVertical categorySelectionBlock:^(UIView *categoryView, NSInteger categoryIndex) {
+        UILabel *selectedView = (UILabel *)categoryView;
+        NSLog(@"vertical \"%@\" cateogry selected at index %d", selectedView.text, categoryIndex);
+    }];
+    [self.verticalSlider setBackgroundColor:[UIColor grayColor]];
+    [self.verticalSlider setX:-50];
+    [self.verticalSlider moveX:0 duration:0.5 complation:nil];
+    [self.view addSubview:self.verticalSlider];
 }
 
 - (void)addNewCategory:(id)sender {
     [self.sliderView addCategotyView:[self labelWithText:@"New Category"]];
+    [self.verticalSlider addCategotyView:[self labelWithText:@"newcat"]];
 }
 
 - (UILabel *)labelWithText:(NSString *)text {
@@ -61,21 +71,9 @@
     return lbl;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
