@@ -1,7 +1,7 @@
 CategorySliderView
 ==================
 
-Horizontal slider view for choosing categories. Add any UIView type as category item view. Fully customisable
+Horizontal or vertical slider view for choosing categories. Add any UIView type as category item view. Fully customisable
 
 Demo
 ====
