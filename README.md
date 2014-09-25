@@ -26,7 +26,7 @@ Copy CategorySliderView.h/m files into your project.
 you can add as many items as you want
 
     UIView *newCategoryView = .....
-    [sliderView addCategotyView:newCategoryView];
+    [sliderView addCategoryView:newCategoryView];
     
 
 
