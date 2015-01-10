@@ -30,7 +30,7 @@ typedef void(^categorySelected)(UIView *categoryView, NSInteger categoryIndex);
 - (instancetype)initWithSliderHeight:(CGFloat)height andCategoryViews:(NSArray *)categoryViews categorySelectionBlock:(categorySelected)block;
 - (instancetype)initWithSliderWidth:(CGFloat)width andCategoryViews:(NSArray *)categoryViews categorySelectionBlock:(categorySelected)block;
 
-- (void)addCategotyView:(UIView *)view;
+- (void)addCategoryView:(UIView *)view;
 
 - (void)setX:(CGFloat)x;
 - (void)setY:(CGFloat)y;

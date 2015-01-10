@@ -34,6 +34,7 @@
         NSLog(@"\"%@\" cateogry selected at index %d", selectedView.text, categoryIndex);
     }];
     
+    [self.sliderView setBackgroundColor:[UIColor yellowColor]];
     [self.sliderView setY:-CategorySliderHeight];
     [self.sliderView moveY:20 duration:0.5 complation:nil];
     [self.view addSubview:self.sliderView];
@@ -57,8 +58,8 @@
 }
 
 - (void)addNewCategory:(id)sender {
-    [self.sliderView addCategotyView:[self labelWithText:@"New Category"]];
-    [self.verticalSlider addCategotyView:[self labelWithText:@"newcat"]];
+    [self.sliderView addCategoryView:[self labelWithText:@"New Category"]];
+    [self.verticalSlider addCategoryView:[self labelWithText:@"newcat"]];
 }
 
 - (UILabel *)labelWithText:(NSString *)text {

@@ -50,7 +50,6 @@
         [self.scrollView setShowsHorizontalScrollIndicator:NO];
         [self.scrollView setShowsVerticalScrollIndicator:NO];
         [self addSubview:self.scrollView];
-        [self.scrollView setBackgroundColor:[UIColor yellowColor]];
         
         self.sliderDirection = direction;
         self.categorySelectedBlock = block;
@@ -60,7 +59,7 @@
         self.shouldAutoSelectScrolledCategory = YES;
         
         for (UIView *v in categoryViews) {
-            [self addCategotyView:v];
+            [self addCategoryView:v];
         }
     }
     return self;
@@ -69,7 +68,7 @@
 
 #pragma mark - Slider
 
-- (void)addCategotyView:(UIView *)view {
+- (void)addCategoryView:(UIView *)view {
     
     if (self.sliderDirection == SliderDirectionHorizontal) {
         float w = 0;
@@ -133,6 +132,10 @@
         
         [self bringSubviewToFront:self.scrollView];
     }
+}
+
+- (void)setBackgroundColor:(UIColor *)backgroundColor {
+    [self.scrollView setBackgroundColor:backgroundColor];
 }
 
 - (void)categoryViewTapped:(UITapGestureRecognizer *)tap {
