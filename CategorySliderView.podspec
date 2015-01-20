@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CategorySliderView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "slider view for choosing categories. add any UIView type as category item view ."
 
   s.description  = <<-DESC
@@ -111,7 +111,7 @@ Optional Properties
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/cemolcay/CategorySliderView.git", :tag => "v1.0.1" }
+  s.source       = { :git => "https://github.com/cemolcay/CategorySliderView.git", :tag => "v1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -122,7 +122,7 @@ Optional Properties
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CategorySliderView", "CategorySliderView/CategorySliderView.{h,m}"
+  s.source_files  = "CategorySliderView/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -160,7 +160,7 @@ Optional Properties
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
