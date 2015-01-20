@@ -7,9 +7,21 @@ Demo
 ====
 ![alt tag](https://raw.githubusercontent.com/cemolcay/CategorySliderView/master/demo.gif)
 
+Install
+-------
+
+**Manual**  
+Copy CategorySliderView.h/m files into your project.
+  
+**Cocoapods**
+
+```
+    source 'https://github.com/CocoaPods/Specs.git'
+    pod 'CategorySliderView', '~> 1.0.2'
+``` 
+
 Usage
 -----
-Copy CategorySliderView.h/m files into your project.
 
     UILabel *category1 = ......
     UILabel *category2 = ......
