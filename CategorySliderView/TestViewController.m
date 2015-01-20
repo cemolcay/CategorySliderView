@@ -31,7 +31,7 @@
     
     self.sliderView = [[CategorySliderView alloc] initWithSliderHeight:CategorySliderHeight andCategoryViews:@[[self labelWithText:@"First Category"], [self labelWithText:@"Second Category"], [self labelWithText:@"Yet another category"], [self labelWithText:@"and antoher category"]] categorySelectionBlock:^(UIView *categoryView, NSInteger categoryIndex) {
         UILabel *selectedView = (UILabel *)categoryView;
-        NSLog(@"\"%@\" cateogry selected at index %d", selectedView.text, categoryIndex);
+        NSLog(@"\"%@\" cateogry selected at index %ld", selectedView.text, (long)categoryIndex);
     }];
     
     [self.sliderView setBackgroundColor:[UIColor yellowColor]];
@@ -49,7 +49,7 @@
     
     self.verticalSlider = [[CategorySliderView alloc] initWithFrame:CGRectMake(0, 130, 50, 300) andCategoryViews:@[[self labelWithText:@"cat1"], [self labelWithText:@"cat2"], [self labelWithText:@"cat3"], [self labelWithText:@"cat4"]] sliderDirection:SliderDirectionVertical categorySelectionBlock:^(UIView *categoryView, NSInteger categoryIndex) {
         UILabel *selectedView = (UILabel *)categoryView;
-        NSLog(@"vertical \"%@\" cateogry selected at index %d", selectedView.text, categoryIndex);
+        NSLog(@"vertical \"%@\" cateogry selected at index %ld", selectedView.text, (long)categoryIndex);
     }];
     [self.verticalSlider setBackgroundColor:[UIColor grayColor]];
     [self.verticalSlider setX:-50];

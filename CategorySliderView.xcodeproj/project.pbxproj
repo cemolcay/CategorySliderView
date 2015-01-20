@@ -10,7 +10,6 @@
 		B2BF885E1966B87000A78FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF885D1966B87000A78FD2 /* Foundation.framework */; };
 		B2BF88601966B87000A78FD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF885F1966B87000A78FD2 /* CoreGraphics.framework */; };
 		B2BF88621966B87000A78FD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF88611966B87000A78FD2 /* UIKit.framework */; };
-		B2BF88641966B87000A78FD2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF88631966B87000A78FD2 /* CoreData.framework */; };
 		B2BF886A1966B87000A78FD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2BF88681966B87000A78FD2 /* InfoPlist.strings */; };
 		B2BF886C1966B87000A78FD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF886B1966B87000A78FD2 /* main.m */; };
 		B2BF88701966B87000A78FD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF886F1966B87000A78FD2 /* AppDelegate.m */; };
@@ -19,7 +18,6 @@
 		B2BF887C1966B87000A78FD2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF887B1966B87000A78FD2 /* XCTest.framework */; };
 		B2BF887D1966B87000A78FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF885D1966B87000A78FD2 /* Foundation.framework */; };
 		B2BF887E1966B87000A78FD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF88611966B87000A78FD2 /* UIKit.framework */; };
-		B2BF887F1966B87000A78FD2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF88631966B87000A78FD2 /* CoreData.framework */; };
 		B2BF88871966B87000A78FD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2BF88851966B87000A78FD2 /* InfoPlist.strings */; };
 		B2BF88891966B87000A78FD2 /* CategorySliderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF88881966B87000A78FD2 /* CategorySliderViewTests.m */; };
 		B2BF88941966B88A00A78FD2 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF88931966B88A00A78FD2 /* TestViewController.m */; };
@@ -41,7 +39,6 @@
 		B2BF885D1966B87000A78FD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B2BF885F1966B87000A78FD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B2BF88611966B87000A78FD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B2BF88631966B87000A78FD2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B2BF88671966B87000A78FD2 /* CategorySliderView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CategorySliderView-Info.plist"; sourceTree = "<group>"; };
 		B2BF88691966B87000A78FD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B2BF886B1966B87000A78FD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,7 +64,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BF88601966B87000A78FD2 /* CoreGraphics.framework in Frameworks */,
-				B2BF88641966B87000A78FD2 /* CoreData.framework in Frameworks */,
 				B2BF88621966B87000A78FD2 /* UIKit.framework in Frameworks */,
 				B2BF885E1966B87000A78FD2 /* Foundation.framework in Frameworks */,
 			);
@@ -78,7 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BF887C1966B87000A78FD2 /* XCTest.framework in Frameworks */,
-				B2BF887F1966B87000A78FD2 /* CoreData.framework in Frameworks */,
 				B2BF887E1966B87000A78FD2 /* UIKit.framework in Frameworks */,
 				B2BF887D1966B87000A78FD2 /* Foundation.framework in Frameworks */,
 			);
@@ -112,7 +107,6 @@
 				B2BF885D1966B87000A78FD2 /* Foundation.framework */,
 				B2BF885F1966B87000A78FD2 /* CoreGraphics.framework */,
 				B2BF88611966B87000A78FD2 /* UIKit.framework */,
-				B2BF88631966B87000A78FD2 /* CoreData.framework */,
 				B2BF887B1966B87000A78FD2 /* XCTest.framework */,
 			);
 			name = Frameworks;
