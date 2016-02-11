@@ -13,7 +13,7 @@ Install
 **Manual**  
 Copy CategorySliderView.h/m files into your project.
   
-**Cocoapods**
+**CocoaPods**
 
 ```
     source 'https://github.com/CocoaPods/Specs.git'
